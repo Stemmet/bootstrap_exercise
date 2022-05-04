@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="bg-dark text-dark">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-sm">
+          <a class="navbar-brand text-info" href="#">Cameron Stemmet</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Form</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- home page -->
+      <div class="container" id="home">
+        <h2 class="display-2 text-light"> Welcome, my name is Cameron Stemmet</h2>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./images/Cameron (3).JPG" alt="me" style="width: 500px;height: 100%; object-fit: cover;">
+            </div>
+
+            <div class="col-md-5 text-light bg-secondary">
+                <div>
+                    <h1> "It's your life...Take a chance"</h1>
+                    <h4>-random youtube video</h4>
+                </div>
+
+            </div>
+
+    <!-- about -->
+    <table class="table bg-dark text-light w-75 mx-auto" id="about">
+        <thead>
+          <tr>
+            <th scope="col">About me</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>How old am I?</strong> <br> 18 years old (07/01/2004)</td>
+            </tr>
+            <tr>
+            <td><strong>Telephone number : </strong> <br> +27 62 823 3134</td>
+          </tr>
+          <tr>
+            <td><strong>Why do I want to get into web Development? </strong> <br> My aunty got into web development and had been telling me what a great experience it was for her. So i deceided to try it out and it's been going good so far.</td>
+            </tr>
+            <tr>
+            <td><strong>E-Mail :</strong> <br> cameronstemmet2@gmail.com</td>
+          </tr>
+          <tr>
+            <td><strong>Location :</strong> Cape Town</td>
+            </tr>
+            <tr>
+            <td><strong>Languages :</strong> English and Afrikaans</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    <!-- contact form -->
+    
+
+    <!-- footer -->
+    <section class="footer" id="footer">
+        <!-- Footer -->
+        <footer class="mt-auto bg-secondary text-white">
+            <!-- Grid container -->
+            <div class="container-lg p-4">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                        <div class="container bg-secondary w-75 mx-auto col-md-12 justify-content-center">
+                            <h2 class="display-2 text-light">Contact Form</h2>
+                            <h2 class=" text-light">Please fill in</h2>
+                            <form class="w-100" action="https://formspree.io/f/xjvlpzdw" method="post">
+                                <!-- Name -->
+                                <div class="row my-2 text-light">
+                                    <label for="name" class="col-md-2 col-form-label-lg">Name: </label>
+                                    <div class="col-8">
+                                        <input id="name" name="name" type="text" placeholder="Enter your name" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Surname -->
+                                <div class="row my-2 text-light">
+                                    <label for="surname" class="col-md-2 col-form-label-lg">Surname: </label>
+                                    <div class="col-8">
+                                        <input id="surname" name="surname" type="text" placeholder="Enter your surame" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Age -->
+                                <div class="row my-2 text-light">
+                                    <label for="age" class="col-md-2 col-form-label-lg">Age: </label>
+                                    <div class="col-8">
+                                        <input id="age" name="age" type="number" placeholder="Enter your age" class="form-control">
+                                    </div>
+                                </div>
+                                <!-- Gender -->
+                                <div class="row my-2 text-light">
+                                    <label for="gender" class="col-md-2 col-form-label-lg">Gender: </label>
+                                    <div class="col-8">
+                                        <span class="ms-3">Male</span> <input id="gender" name="gender" type="radio">
+                                        <span class="ms-2">Female</span> <input id="gender" name="gender" type="radio">
+                                    </div>
+                                </div>
+                                <!-- message -->
+                                <div class="row my-2 text-light">
+                                    <label for="message" class="col-md-2 col-form-label-lg">Message: </label>
+                                    <div class="col-8 form-floating">
+                                        <textarea name="message" id="message" class="h-100 w-100">
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <!-- button -->
+                                <div class="row my-2 text-light">
+                                    <label class="col-md-2 col-form-label-lg"></label>
+                                    <div class="col-8">
+                                        <input type="submit" value="Submit"
+                                        class="btn btn-light w-100">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright: Cameron Stemmet
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
